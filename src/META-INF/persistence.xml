@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="LMS">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.lms.model.User</class>
+		<class>com.lms.model.Course</class>
+		<class>com.lms.model.UserCourseDetail</class>
+		<class>com.lms.model.CourseSchedule</class>
+		<class>com.lms.model.Post</class>
+		<class>com.lms.model.Thread</class>
+		<class>com.lms.model.Tag</class>
+		<class>com.lms.model.JobApplication</class>
+		<class>com.lms.model.Job</class>
+		<class>com.lms.model.TaHour</class>
+		<properties>
+			<property name="javax.persistence.jdbc.password" value="abc123"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/lms"/>
+			<!-- property name="eclipselink.ddl-generation" value="drop-and-create-tables" /-->
+		</properties>
+	</persistence-unit>
+</persistence>
